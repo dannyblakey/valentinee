@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine</title>
+  <style>
+    body {
+      background: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .yes {
+      background: #4CAF50;
+      color: white;
+    }
+
+    .no {
+      background: #F44336;
+      color: white;
+    }
+
+    #love {
+      display: none;
+      margin-top: 30px;
+      font-size: 26px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Will you be my Valentine, Chlo?</h1>
+
+    <div class="buttons">
+      <button class="yes" onclick="showLove()">Yes</button>
+      <button class="no" onclick="alert('Wrong answer 😏')">No</button>
+    </div>
+
+    <div id="love">
+      ❤️ I love you too Chlo ❤️
+    </div>
+  </div>
+
+  <script>
+    function showLove() {
+      document.getElementById("love").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
